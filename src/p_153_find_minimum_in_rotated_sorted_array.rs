@@ -6,7 +6,7 @@ impl Solution {
     while left <= right {
       let l = nums[left as usize];
       let r = nums[right as usize];
-      let mid = (right + left) as i32 / 2;
+      let mid = (right + left) / 2;
       let m = nums[mid as usize];
       if l <= r {
         result = std::cmp::min(result, l);

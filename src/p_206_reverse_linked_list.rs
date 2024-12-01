@@ -19,14 +19,14 @@ impl Solution {
     let mut cur = head;
     let mut prev: Option<Box<ListNode>> = None;
     while let Some(mut node) = cur {
-      // cur = node.next.take();
-      // node.next = prev.take();
+      // cur = node.next;
+      // node.next = prev;
       // prev = Some(node);
-      // let tmp = node.next;
-      cur = node.next;
+
+      let tmp = node.next;
       node.next = prev;
       prev = Some(node);
-      // cur = tmp;
+      cur = tmp;
     }
     prev
   }
