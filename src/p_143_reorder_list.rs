@@ -8,9 +8,9 @@ impl Solution {
       return;
     }
 
-    let mut new_head = head.clone();
-    let mut fast = head.as_ref();
-    let mut slow = new_head.as_mut();
+    let new_head = head.clone();
+    let mut fast = new_head.as_ref();
+    let mut slow = head.as_mut();
     while let Some(fast_node) = fast {
       let Some(ref fast_next_node) = &fast_node.next else {
         break;
@@ -27,7 +27,7 @@ impl Solution {
       prev = Some(node);
     }
 
-    let mut first = new_head.as_mut();
+    let mut first = head.as_mut();
     let mut second = prev;
     while let (Some(first_node), Some(mut second_node)) = (first, second) {
       let tmp1 = first_node.next.take();
@@ -39,7 +39,6 @@ impl Solution {
       first = first_node.next.as_mut().unwrap().next.as_mut();
       second = tmp2;
     }
-    *head = new_head;
   }
 }
 
