@@ -115,10 +115,10 @@ mod test {
 
   #[test]
   fn ex4() {
-    let mut node1 = Rc::new(RefCell::new(ListNode::new(3)));
-    let mut node2 = Rc::new(RefCell::new(ListNode::new(2)));
-    let mut node3 = Rc::new(RefCell::new(ListNode::new(0)));
-    let mut node4 = Rc::new(RefCell::new(ListNode::new(-4)));
+    let node1 = Rc::new(RefCell::new(ListNode::new(3)));
+    let node2 = Rc::new(RefCell::new(ListNode::new(2)));
+    let node3 = Rc::new(RefCell::new(ListNode::new(0)));
+    let node4 = Rc::new(RefCell::new(ListNode::new(-4)));
     node1.borrow_mut().next = Some(node2.clone());
     node2.borrow_mut().next = Some(node3.clone());
     node3.borrow_mut().next = Some(node4.clone());
