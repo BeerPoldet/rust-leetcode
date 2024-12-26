@@ -28,6 +28,7 @@ mod p_424_longest_repeating_character_replacement;
 mod p_509_fibonacci;
 mod p_543_diameter_of_binary_tree;
 mod p_567_permutation_in_string;
+mod p_572_is_subtree;
 mod p_704_binary_search;
 mod p_739_daily_tempuratures;
 mod p_853_car_fleet;
