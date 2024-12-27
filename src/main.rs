@@ -22,6 +22,7 @@ mod p_155_min_stack;
 mod p_206_reverse_linked_list;
 mod p_217_contains_duplicate;
 mod p_226_invert_binary_tree;
+mod p_235_lowest_common_ancestor;
 mod p_238_product_of_array_except_self;
 mod p_242_valid_anagram;
 mod p_424_longest_repeating_character_replacement;
