@@ -64,7 +64,9 @@ impl Solution {
 
 #[derive(Debug)]
 struct ListNode {
+  #[allow(dead_code)]
   val: i32,
+  #[allow(dead_code)]
   next: Option<Rc<RefCell<ListNode>>>,
 }
 
