@@ -20,6 +20,7 @@ mod p_143_reorder_list;
 mod p_150_evaluate_reverse_polish_notation;
 mod p_153_find_minimum_in_rotated_sorted_array;
 mod p_155_min_stack;
+mod p_199_right_side_view;
 mod p_206_reverse_linked_list;
 mod p_217_contains_duplicate;
 mod p_226_invert_binary_tree;
